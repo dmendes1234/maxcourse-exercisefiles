@@ -1,0 +1,6 @@
+<h1>Welcome</h1>
+
+<input type="text" placeholder="username" [(ngModel)]="username">
+<p>{{username}}</p>
+
+<button [disabled] = "!username" (click) = "onSignIn()">Sign in</button>
